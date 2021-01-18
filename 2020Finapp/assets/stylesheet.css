@@ -106,6 +106,6 @@ img {
     }
     .pic:hover
     {
-      opacity: 0.1;
+      opacity: 1;
       filter: invert(1);
     }
