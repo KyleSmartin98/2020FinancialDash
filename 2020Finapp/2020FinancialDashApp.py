@@ -17,7 +17,7 @@ df2 = pd.read_csv('2019 financial.csv')
 df2 = df2.rename(columns={'Brand ': 'Brand', 'Category': 'Type'})
 external_stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-
+server = app.server
 app.layout = html.Div([
     html.Div(id="output-clientside"),
     html.Div(children=[
@@ -202,6 +202,7 @@ app.clientside_callback(
     [Input("yourGraph_ID", "figure")],
 )
 if __name__=="__main__":
-    app.run_server(host=os.getenv('IP', '0.0.0.0'),
-            port=int(os.getenv('PORT', 4444)))
+    app.run(debug=True)
+    #app.run_server(host=os.getenv('IP', '0.0.0.0'),
+            #port=int(os.getenv('PORT', 4444)))
 
