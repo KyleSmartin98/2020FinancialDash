@@ -102,10 +102,10 @@ img {
 }
 .pic{
       opacity: 1;
-      filter: alpha(opacity=100);
+      filter: invert(1);
     }
     .pic:hover
     {
       opacity: 1;
-      filter: invert(1);
+      filter: alpha(opacity=100);
     }
