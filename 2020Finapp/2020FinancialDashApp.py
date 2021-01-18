@@ -152,7 +152,6 @@ app.layout = html.Div([
                 ]),
         ],style={'display': 'inline-block', 'width': '85%', 'height': '100%'}),
     ], style=dict(display='flex')),
-    html.Br(),
     html.Div(
         html.Footer(
             html.A(href="https://www.caretag.us/", children=[
