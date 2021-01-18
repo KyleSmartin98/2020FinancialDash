@@ -107,5 +107,5 @@ img {
     .pic:hover
     {
       opacity: 0.1;
-      filter: filter: invert(1);
+      filter: invert(1);
     }
