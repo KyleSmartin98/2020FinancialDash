@@ -16,10 +16,16 @@ df = df.rename(columns={'Brand ': 'Brand', 'Size ': 'Size', 'Sold $ ': 'Sold', '
 df2 = pd.read_csv('2019 financial.csv')
 df2 = df2.rename(columns={'Brand ': 'Brand', 'Category': 'Type'})
 external_stylesheets = [dbc.themes.BOOTSTRAP]
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets, meta_tags=[
+    {'name': 'Caretag 2020 Business Report',
+     'content': 'This website is a dynamic business report for www.caretag.us.'
+                'Please visit www.caretag.us to see all of our offerings'},
+    {'charset': 'utf-8'},
+    {'name': 'viewport',
+     'content': 'width=device-width, initial-scale=0.95'},
+], title='Caretag 2020 Business Report')
 server = app.server
 app.layout = html.Div([
-    html.Meta(name="viewport", content="width=device-width, initial-scale=1.0"),
     html.Div(id="output-clientside"),
     html.Div(children=[
         html.Header(children=[
