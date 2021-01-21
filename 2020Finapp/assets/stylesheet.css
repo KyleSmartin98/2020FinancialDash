@@ -85,21 +85,7 @@ a:hover + .box,.box:hover{
     position: relative;
     z-index: 100;
     vertical-align: top
-}
-footer {
-  position: relative;
-  height: 100px;
-}
 
-img {
-  position: absolute;
-  left: 45%;
-  bottom: -20px;
-  width: 85px;
-  height: 70px;
-  margin-left: -20px;
-  margin: 0rem
-}
 .pic{
       opacity: 1;
       filter: invert(1);
