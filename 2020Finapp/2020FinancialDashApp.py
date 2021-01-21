@@ -27,7 +27,8 @@ app.layout = html.Div([
         ]),
     ]),
     html.Div(children=[
-        html.Nav(children=[
+        html.Nav(className="disappear",
+                 children=[
             html.Ul(children=[
                 html.Li(children=[
                     html.A("Introduction", href="#section-1")
