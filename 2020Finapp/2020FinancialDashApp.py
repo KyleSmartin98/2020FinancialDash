@@ -43,6 +43,16 @@ app.layout = html.Div([
                     html.A("Final Thoughts", href="#section-4")
                 ]),
             ]),
+            html.A(href="https://www.caretag.us/", children=[
+                html.Img(className="pic",
+                         alt="caretag",
+                         src=app.get_asset_url("Logo.png"),
+                         style={'height': '75px',
+                                'width': '85px',
+                                'display': 'block',
+                                'margin-left': 'auto',
+                                'margin-right': 'auto',
+                                'filter': 'invert(1)'})])
         ], style={'display': 'inline-block', 'height': '100%', 'vertical-align': 'top'}),
         html.Main(children=[
             html.Section(
@@ -153,14 +163,7 @@ app.layout = html.Div([
                             "If you have any questions about this report please feel free to reach out to the company at any time at:", html.A('Email', className="no-underline", href="mailto:caretagus@gmail.com", style={'margin': '0.25rem', 'color': '#ffd11a'})])
                 ]),
         ],style={'display': 'inline-block', 'width': '85%', 'height': '100%'}),
-    ], style=dict(display='flex')),
-    html.Div(
-        html.Footer(
-            html.A(href="https://www.caretag.us/", children=[
-                html.Img(className="pic", alt="caretag", src=app.get_asset_url("Logo.png"))
-            ])
-        )
-    )
+    ], style=dict(display='flex', position='absolute')),
 ])
 
 
