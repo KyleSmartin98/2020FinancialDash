@@ -19,6 +19,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP]
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.layout = html.Div([
+    html.Meta(name="viewport", content="width=device-width, initial-scale=1.0"),
     html.Div(id="output-clientside"),
     html.Div(children=[
         html.Header(children=[
