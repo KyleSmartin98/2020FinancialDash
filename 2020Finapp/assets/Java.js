@@ -42,7 +42,11 @@ window.dash_clientside.clientside = {
         }, 500);
     return null;
     },
-};
+}
+
+if(screen.availHeight > screen.availWidth){
+    alert("Please use Landscape!");
+}
 
 //Resources
 
