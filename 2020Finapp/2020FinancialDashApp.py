@@ -50,7 +50,7 @@ app.layout = html.Div([
                 ]),
             ]),
             html.A(href="https://www.caretag.us/", children=[
-                html.Img(className="image-hover",
+                html.Img(
                          alt="caretag",
                          src=app.get_asset_url("Logo.png"),
                          style={'height': '75px',
