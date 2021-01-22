@@ -86,11 +86,12 @@ a:hover + .box,.box:hover{
     z-index: 100;
     vertical-align: top
 
-.pic{
+.image-hover{
       opacity: 1;
       filter: invert(1);
     }
-    .pic:hover
+    
+.image-hover:hover
     {
       opacity: 0.3;
       /*filter: alpha(opacity=100)*/;
