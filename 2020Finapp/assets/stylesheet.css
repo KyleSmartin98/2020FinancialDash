@@ -85,6 +85,7 @@ a:hover + .box,.box:hover{
     position: relative;
     z-index: 100;
     vertical-align: top
+}      
 
 .image-hover{
       opacity: 1;
